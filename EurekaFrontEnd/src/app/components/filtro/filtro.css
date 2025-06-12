@@ -1,0 +1,23 @@
+mat-select {
+  background-color: white !important;
+}
+
+.mat-select-trigger {
+  background-color: white !important;
+}
+
+.mat-select-panel {
+  background-color: white !important;
+  color: black;
+}
+
+mat-option {
+  background-color: white !important;
+  color: black !important;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #A2A2A2; */
+}
