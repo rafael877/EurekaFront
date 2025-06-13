@@ -6,13 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-filtro',
   imports: [
-    FormsModule, 
-    MatFormFieldModule, 
-    MatSelectModule, 
+    FormsModule,
+    MatFormFieldModule,
+    MatSelectModule,
     MatInputModule,
     MatCheckboxModule,
     MatButtonModule,

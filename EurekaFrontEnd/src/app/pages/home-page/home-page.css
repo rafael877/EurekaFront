@@ -1,8 +1,12 @@
 .infoFiltro {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .container {
     padding: 2rem;
+}
+
+.info {
+  width: 50%;
 }
