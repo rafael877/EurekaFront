@@ -4,8 +4,26 @@
   </div>
 
   <mat-form-field>
-    <mat-label>UF</mat-label>
-    <mat-select [(ngModel)]="selectedValue" name="UF">
+    <mat-label>Abertura</mat-label>
+    <mat-select name="Abertura">
+      <mat-option value="bla">bla</mat-option>
+      <mat-option value="bla2">bla2</mat-option>
+      <mat-option value="bla3">bla3</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Porte</mat-label>
+    <mat-select name="Porte">
+      <mat-option value="bla">bla</mat-option>
+      <mat-option value="bla2">bla2</mat-option>
+      <mat-option value="bla3">bla3</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Razão Social</mat-label>
+    <mat-select name="RazãoSocial">
       <mat-option value="bla">bla</mat-option>
       <mat-option value="bla2">bla2</mat-option>
       <mat-option value="bla3">bla3</mat-option>
@@ -22,8 +40,8 @@
   </mat-form-field>
 
   <mat-form-field>
-    <mat-label>Situação</mat-label>
-    <mat-select name="Situacao">
+    <mat-label>Bairro</mat-label>
+    <mat-select name="Bairro">
       <mat-option value="bla">bla</mat-option>
       <mat-option value="bla2">bla2</mat-option>
       <mat-option value="bla3">bla3</mat-option>
@@ -31,24 +49,39 @@
   </mat-form-field>
 
   <mat-form-field>
-    <mat-label>Situação</mat-label>
-    <mat-select name="Situacao">
+    <mat-label>UF</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="UF">
       <mat-option value="bla">bla</mat-option>
       <mat-option value="bla2">bla2</mat-option>
       <mat-option value="bla3">bla3</mat-option>
     </mat-select>
   </mat-form-field>
 
-  <div class="checkboxes">
-    <mat-checkbox>Filial</mat-checkbox>
-    <mat-checkbox>Matriz</mat-checkbox>
-  </div>
+  <mat-form-field>
+    <mat-label>Cnae Principal</mat-label>
+    <mat-select name="CnaePrincipal">
+      <mat-option value="bla">bla</mat-option>
+      <mat-option value="bla2">bla2</mat-option>
+      <mat-option value="bla3">bla3</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Cnae Secundário</mat-label>
+    <mat-select name="CnaeSecundário">
+      <mat-option value="bla">bla</mat-option>
+      <mat-option value="bla2">bla2</mat-option>
+      <mat-option value="bla3">bla3</mat-option>
+    </mat-select>
+  </mat-form-field>
 
   <div class="buttons">
-    <button matButton="filled" style="background-color: red">Excluir</button>
-    <button matButton="filled" style="background-color: #df9800">Editar</button>
-    <button matButton="filled" style="background-color: #6cc94a">
-      Adicionar
+    <div>
+      <mat-checkbox>Filial</mat-checkbox>
+      <mat-checkbox>Matriz</mat-checkbox>
+    </div>
+    <button matButton="filled" style="background-color: #1B9036">
+      Filtrar
     </button>
   </div>
 </form>
