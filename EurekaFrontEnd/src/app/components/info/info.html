@@ -5,21 +5,16 @@
 
     <div class="container">
         <div class="dados">
-          <div class="textos">
-            <p>Dados da empresa </p>
-            <p>local</p>
-            <p>sla oq</p>
-            <p>esquina onde ta</p>
-            <p>cep</p>
-            <p>cnpj +2+465465465645645646465</p>
-            <p>numero pra ifood 55 45645656</p>
-            <p>dados e dados</p>
+          <div *ngFor="let empresa of dados; let i = index" class="textos">
+            {{ empresa.razao_social }}
           </div>
-            <div class="copy">
+          
+          <p *ngIf="dados.length === 0" class="vazio">Nenhuma empresa encontrada.</p>
+            <!-- <div class="copy">
               <button matButton="filled" style="background-color: #BCBCBC">
                 Copiar Tudo
               </button>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
