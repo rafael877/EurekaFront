@@ -1,3 +1,33 @@
-<p>info-table works!</p>
-
-<app-campo/>
+<div class="dados">
+    <div class="name">
+        {{ dados ? dados.razao_social : 'Nenhuma empresa selecionada.' }}
+    </div>
+    
+    <div class="campos">
+        <app-campo Titulo="Cnpj" Valor="{{ dados ? dados.cnpj : '' }}"/>
+        <app-campo Titulo="Razao Social" Valor="{{ dados ? dados.razao_social : '' }}"/>
+        <app-campo Titulo="Nome Fantasia" Valor="{{ dados ? dados.nome_fantasia : '' }}"/>
+        <app-campo Titulo="Abertura" Valor="{{ dados ? dados.abertura : '' }}"/>
+        <app-campo Titulo="Situacao" Valor="{{ dados ? dados.situacao : '' }}"/>
+        <app-campo Titulo="Tipo" Valor="{{ dados ? dados.tipo : '' }}"/>
+        <app-campo Titulo="Porte" Valor="{{ dados ? dados.porte : '' }}"/>
+        <app-campo Titulo="Telefone" Valor="{{ dados ? dados.telefone : '' }}"/>
+        <app-campo Titulo="Email" Valor="{{ dados ? dados.email : '' }}"/>
+        <app-campo Titulo="Logradouro" Valor="{{ dados ? dados.logradouro : '' }}"/>
+        <app-campo Titulo="Numero" Valor="{{ dados ? dados.numero : '' }}"/>
+        <app-campo Titulo="Bairro" Valor="{{ dados ? dados.bairro : '' }}"/>
+        <app-campo Titulo="Municipio" Valor="{{ dados ? dados.municipio : '' }}"/>
+        <app-campo Titulo="Uf" Valor="{{ dados ? dados.uf : '' }}"/>
+        <app-campo Titulo="Cep" Valor="{{ dados ? dados.cep : '' }}"/>
+        <app-campo Titulo="Cnae Principal" Valor="{{ dados ? dados.cnae_principal : '' }}"/>
+        <app-campo Titulo="Cnae Principal Desc" Valor="{{ dados ? dados.cnae_principal_desc : '' }}"/>
+        <app-campo Titulo="Cnaes Secundarios" Valor="{{ dados ? dados.cnaes_secundarios : '' }}"/>
+        <app-campo Titulo="Socios" Valor="{{ dados ? dados.socios : '' }}"/>
+    </div>
+    
+    <!-- <div class="copy">
+        <button matButton="filled" style="background-color: #BCBCBC">
+        Copiar Tudo
+        </button>
+    </div> -->
+</div>

@@ -4,6 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MeuServicoService } from '../../services/meu-servico';
 import { HttpClientModule } from '@angular/common/http';
+import { MatChipsModule } from '@angular/material/chips';
 
 @Component({
   selector: 'app-info',
@@ -12,7 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     CommonModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatChipsModule
   ],
   templateUrl: './info.html',
   styleUrl: './info.css',
@@ -37,5 +39,10 @@ export class Info {
         console.error('Erro ao carregar dados', erro);
       }
     );
+  }
+
+  sendDados(cnpj: string) {
+    console.log(cnpj)
+    this.cnpj.emit(cnpj);
   }
 }

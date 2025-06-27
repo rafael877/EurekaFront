@@ -16,5 +16,13 @@ import { Filtro } from '../../components/filtro/filtro';
   styleUrl: './home-page.css'
 })
 export class HomePage {
+  cnpj: string = 'test'
 
+  setCnpj(event : string) {
+    this.cnpj = event
+  }
+
+  check() {
+    console.log(this.cnpj)
+  }
 }

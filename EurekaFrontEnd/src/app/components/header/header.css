@@ -1,5 +1,16 @@
 .header {
     background-color: #1B9036;
     padding: 0.7rem;
-    padding-left: 4rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+.title {
+    background-color: white;
+    padding: 0.7rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }

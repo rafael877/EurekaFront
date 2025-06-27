@@ -12,7 +12,7 @@
     flex-direction: column;
     gap: 0.2rem;
     font-size: larger;
-    height: 350px;
+    height: 500px;
     justify-content: space-between;
     overflow-y: auto;
 }
